@@ -5,66 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:backgroundTint="@color/beige"
+    android:background="@drawable/ordersback"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter your order details!"
+        android:text="Amigo Eaters!!"
         android:layout_margin="20dp"
         android:textSize="30dp"
         android:minHeight="48dp"/>
 
-    <EditText
-        android:id="@+id/et1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:hint="Enter Order 1"
-        android:inputType="text"
-        android:minHeight="48dp" />
-
-    <EditText
-        android:id="@+id/et2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:minHeight="48dp"
-        android:layout_margin="20dp"
-        android:hint="Enter Order 2"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/et3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:layout_margin="20dp"
-        android:hint="Enter Order 3"
-        android:minHeight="48dp" />
-
-    <EditText
-        android:id="@+id/et4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:layout_margin="20dp"
-        android:minHeight="48dp"
-        android:hint="Enter Order 4"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
         android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:backgroundTint="@color/brown"
-        android:text="Place it" />
+        app:cardCornerRadius="40dp">
+
+        <LinearLayout
+            android:layout_width="287dp"
+            android:layout_height="430dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="61dp"
+                android:layout_margin="10dp"
+                android:minHeight="48dp"
+                android:text="Enter your order details!"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Enter Order 1"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Enter Order 2"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Enter Order 3"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Enter Order 4"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/brown"
+                android:minHeight="48dp"
+
+                android:text="Place it" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 
 </LinearLayout>
