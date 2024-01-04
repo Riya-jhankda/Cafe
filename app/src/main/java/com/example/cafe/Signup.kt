@@ -37,6 +37,7 @@ class Signup : AppCompatActivity() {
             //creating a child to set the other values in the firebase
             //must remember thechild must be unique
             database.child(id).setValue(user).addOnSuccessListener {
+                et_name.text?.clear()
                 Toast.makeText(this,"User Registered Sucessfully",Toast.LENGTH_SHORT).show()
             }.addOnSuccessListener {
                 Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()

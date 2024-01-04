@@ -23,9 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener{
 
-            val orderPlaced="1. "+ett1.text.toString() + "\n2. "+ ett2.text.toString() + "\n" +
-                    "3. "+ ett3.text.toString() + " \n" +
-                    "4."+ett4.text.toString()
+            val orderPlaced=ett1.text.toString() + "\n"+ ett2.text.toString() + "\n" + ett3.text.toString() + "\n"+ett4.text.toString()
             intent= Intent(this,SecondActivity::class.java)
             intent.putExtra(KEY,orderPlaced)
             startActivity(intent)
