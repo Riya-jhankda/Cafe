@@ -13,6 +13,6 @@ class SecondActivity : AppCompatActivity() {
 
         val ord=findViewById<TextView>(R.id.orders)
 
-        ord.text=ordersplaced.toString()
+        ord.text="The order placed by you is : \n"+ordersplaced.toString()
     }
 }

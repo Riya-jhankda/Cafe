@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/splashbackground"
     tools:context=".SecondActivity">
 
     <TextView
@@ -11,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textStyle="bold"
         android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="211dp"
         tools:layout_editor_absoluteY="295dp" />
